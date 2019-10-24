@@ -5,7 +5,7 @@ export default function Canvas(props) {
 
 	const pixelData = [];
 
-	for (let i = 0; i < 6000; i++) {
+	for (let i = 0; i < 5000; i++) {
 		pixelData.push({ id: i, color: "white" });
 	}
 

@@ -16,19 +16,26 @@ export default function Canvas(props) {
 				className='pixel'
 				key={pixel.id}
 				id={pixel.id}
-				onMouseOver={changeColor}
+				onMouseOver={changeColorDrag}
+				onClick={changeColor}
 				style={{
 					background: pixels[pixel.id].color
 				}}></div>
 		);
 	});
 
-	function changeColor(event) {
+	function changeColorDrag(event) {
 		if (dragging) {
 			const copiedPixels = [...pixels];
 			copiedPixels[event.target.id].color = props.color;
 			setPixels(copiedPixels);
 		}
+	}
+
+	function changeColor(event) {
+		const copiedPixels = [...pixels];
+		copiedPixels[event.target.id].color = props.color;
+		setPixels(copiedPixels);
 	}
 
 	function mouseDown(event) {

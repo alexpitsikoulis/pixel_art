@@ -1,5 +1,6 @@
 .App {
 	text-align: center;
+	font-family: "Press Start 2P", cursive;
 }
 
 .App-logo {
@@ -21,13 +22,32 @@
 	color: #09d3ac;
 }
 
+h1 {
+	font-size: 3em;
+	background: linear-gradient(#ff0000, #00ff00, #0000ff);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: black 1px;
+}
+
+input {
+	font-family: inherit;
+	height: 20px;
+}
+button {
+	font-family: inherit;
+	height: 25px;
+	border-radius: 5px;
+}
+
 .canvas {
 	width: 1000px;
 	height: 500px;
 	margin: 10px auto;
 	display: flex;
 	flex-wrap: wrap;
-	border: solid 5px black;
+	border: solid 4px lightgrey;
+	border-style: inset;
 }
 
 .pixel {

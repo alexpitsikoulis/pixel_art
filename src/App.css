@@ -35,3 +35,10 @@
 	width: 10px;
 	display: inline-block;
 }
+
+#swatches {
+	display: flex;
+	width: 55vw;
+	justify-content: flex-end;
+	margin-bottom: 10px;
+}
